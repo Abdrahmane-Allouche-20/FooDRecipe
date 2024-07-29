@@ -12,7 +12,7 @@ function App() {
   
   return (
     <div className=' '>
-
+c
       <div  className='content   w-full max-w-6xl mx-auto  absolute left-1/2 -translate-x-1/2 p-4  mic-blend-overlay z-20' >
       
 
