@@ -4,7 +4,7 @@ body {
   background-size: cover;
   height: 100vh;
 
-  padding: 20px;
+  padding:  15px;
 position: relative;
   box-sizing: border-box; /* Ensure padding is within element width */
 }

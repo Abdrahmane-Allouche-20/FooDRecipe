@@ -1,0 +1,54 @@
+.recipe {
+  height: 500px;
+  overflow-y: hidden; /* Ensure the recipe element is scrollable */
+   /* Add padding to move the scrollbar further to the right */
+}
+.recipeContainer{
+  height: 480px;
+  
+}
+.scrollbar-custom-recipe {
+  position: relative;
+}
+
+.scrollbar-custom-recipe::-webkit-scrollbar {
+  width: 5px;
+  height: 50px; /* Set the height of the scrollbar thumb */
+  min-height: 50px;
+}
+
+.scrollbar-custom-recipe::-webkit-scrollbar-track {
+  /* From https://css.glass */
+  background: rgba(22, 127, 172, 0.317) ;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  margin-right: -15px; /* Negative margin to adjust the position of the scrollbar */
+  height: 50px; /* Set the height of the scrollbar thumb */
+      min-height: 50px;
+}
+
+.scrollbar-custom-recipe::-webkit-scrollbar-thumb {
+  /* From https://css.glass */
+  background: rgb(28, 141, 158);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 10px solid rgba(52, 87, 34, 0.3);
+  height: 50px; /* Set the height of the scrollbar thumb */
+  min-height: 50px; /* Ensure the minimum height of the scrollbar thumb */
+}
+
+.scrollbar-custom-recipe::-webkit-scrollbar-thumb:hover {
+  background: rgb(7, 54, 98);
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(47, 106, 39, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px)
+}

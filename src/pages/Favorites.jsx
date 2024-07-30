@@ -10,7 +10,7 @@ function Favorites() {
   const { Favorites,handleDeleteFavorites } = useContext(FoodContext);
 
   return (
-    <div className="w-full grid grid-cols-4 gap-5 p-3 my-4 scrolled overflow-x-hidden overflow-y-scroll scrollbar-custom">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-3 my-4 scrolled overflow-x-hidden overflow-y-scroll scrollbar-custom">
       {Favorites && Favorites.length > 0 ? (
         Favorites.map((favorite, index) => (
           <div key={index} className="col-span-1">
@@ -79,15 +79,16 @@ function Favorites() {
         <div className="col-span-4 mx-auto">
          <div className="">
        
-      <div className="flex justify-center items-center">
-       <h1 className="text-4xl font-black text-white ">Go And Get Some Recipe For Your Collection </h1>
-<img src={BookFood} className="w-20 h-20" />
+      <div className="flex justify-center items-center md:flex-row flex-col">
+      
+       <h1 className="text-base md:text-2xl lg:text-4xl font-black text-white ">Go And Get Some Recipe For Your Collection </h1>
+<img src={BookFood} className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20  float-right" />
 
       </div>
 
          </div>
          <Link to="/">
-                    <div className="flex justify-center items-center ">
+                    <div className="flex justify-center items-center mt-4 lg:mt-0 ">
                       <img src={Truck} className="" />
                     </div>
                 </Link>
