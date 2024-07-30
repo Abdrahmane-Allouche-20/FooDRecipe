@@ -7,6 +7,7 @@ min-height: 100vh;
   padding:  15px;
 position: relative;
   box-sizing: border-box; /* Ensure padding is within element width */
+  overflow-y: hidden;
 }
 body::after {
   content: '';
