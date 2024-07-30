@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
+min-height: 100vh;
   padding:  15px;
 position: relative;
   box-sizing: border-box; /* Ensure padding is within element width */
